@@ -1,0 +1,53 @@
+Q. Name some character encoding detection alogrithms. How do they function?
+
+Character encoding detection algorithms are also known as charset detection.
+
+We sometimes explicitly define the charset such as by using meta tag in HTML:
+
+<meta charset="utf-8">
+
+
+An algorithm to detect charset: International Components for Unicode (ICU)
+	
+	It is an open source project under Unicode Consortium which was first released in 1999.  ICU is widely portable to many operating systems and environments. It is sponsored and used by many big names such as IBM. 
+
+ICU provides the following services: 
+
+	Unicode text handling
+
+	full character properties, and character set conversions
+
+	Unicode regular expressions
+
+	full Unicode sets
+
+	character, word, and line boundaries
+
+	language-sensitive collation and searching
+
+	normalization, upper and lowercase conversion, and script transliterations
+
+	comprehensive locale data and resource bundle architecture via the Common Locale Data 		Repository (CLDR)
+
+	multi-calendar and time zones
+
+	rule-based formatting and parsing of dates, times, numbers, currencies, and messages. 
+
+Repo link: https://github.com/unicode-org/icu
+
+# Using YAML for simplicity of example.
+hello: Hello, {user}!
+
+# offset allows the categories to be subtracted by the specified amount before being processed. It does not, however, affect the exact-match system.
+party: {user} has invited {player_count, plural, offset:1, =0 {nobody} one {a player} other {# players}} to {user_gender, select, male {his}, female {her}, other {their}} party.
+
+
+import msg from './example.yaml'
+function say(messageKey, options) { console.log(msg[messageKey](options)) }
+
+say('hello', {user: 'Jimmy'})  // Hello, Jimmy!
+say('party', {user: 'Whales', player_count: 5000, user_gender: 'male'})   // Whales has invited 4999 players to his game.
+say('party', {user: 'Dolphin', player_count: 20, user_gender: 'other'})   // Dolphin has invited 19 players to their game.
+say('party', {user: 'Elephant', player_count: 1, user_gender: 'female'})  // Elephant has invited nobody to her game.
+
+
