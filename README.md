@@ -41,6 +41,11 @@
  + punkt
  + parse tree
 
+[Task 8](https://github.com/BRO3886/winsem2019_NLP/tree/master/Task%208)
+ + gender features
+ + classification
+ + naive bayes classification
+
 [Extra](https://github.com/BRO3886/winsem2019_NLP/tree/master/self_tf)
  + NLP with tensorflow
 
