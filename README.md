@@ -41,5 +41,6 @@
  + punkt
  + parse tree
 
-
+[Extra](https://github.com/BRO3886/winsem2019_NLP/tree/master/self_tf)
+ + NLP with tensorflow
 
