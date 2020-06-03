@@ -54,7 +54,7 @@ here ma'am is revising the previous class topics
 
 # In[22]:
 
-
+#licensed texts from the web
 from nltk.corpus import webtext
 
 
@@ -66,7 +66,7 @@ webtext.fileids()
 
 # In[28]:
 
-
+#pirates of the carribean
 webtext.words('pirates.txt')[:20]
 
 

@@ -3,7 +3,7 @@
 
 # In[1]:
 
-
+#stopwords such as and, their, them
 from nltk.corpus import stopwords
 
 
@@ -99,7 +99,7 @@ texts
 
 # In[23]:
 
-
+#sentence and word tokenization
 for text in texts:
     sentences = nltk.sent_tokenize(text)
     for sentence in sentences:
@@ -110,7 +110,7 @@ print(tagged_words)
 
 # In[27]:
 
-
+#tweet by a tweleb
 donald = '''All is well :D Missiles launched from Iran at two military bases located in Iraq. Assessment of casualties & damages taking place now. So far, so good! We have the most powerful and well equipped military anywhere in the world, by far! I will be making a statement tomorrow morning.'''
 
 
@@ -122,7 +122,7 @@ from nltk.tokenize import TweetTokenizer
 
 # In[29]:
 
-
+#tweettokenizer recognises modern lingo
 TweetTokenizer().tokenize(donald)
 
 

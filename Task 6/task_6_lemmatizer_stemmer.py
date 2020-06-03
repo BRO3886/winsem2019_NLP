@@ -3,7 +3,8 @@
 
 # In[5]:
 
-
+#stemming and lemmatization
+#porter stemmer
 import nltk
 from nltk.stem import PorterStemmer
 porterStemmer = PorterStemmer()

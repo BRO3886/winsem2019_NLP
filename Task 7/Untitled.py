@@ -21,7 +21,7 @@ sentence = "The little yellow dog barked at the big black cat"
 
 # In[19]:
 
-
+#tokenization
 tokenized_sentence = word_tokenize(sentence)
 
 
@@ -33,7 +33,7 @@ tokenized_sentence
 
 # In[21]:
 
-
+#pos taggging
 from nltk import pos_tag
 
 
@@ -81,7 +81,7 @@ print(result)
 
 # In[29]:
 
-
+#drawing parse tree
 result.draw()
 
 

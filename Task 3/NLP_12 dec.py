@@ -9,13 +9,13 @@ import nltk
 
 # In[2]:
 
-
+#brown corpus of 1 million words
 from nltk.corpus import brown
 
 
 # In[3]:
 
-
+#fiction,adventure etc
 brown.categories()
 
 
@@ -42,7 +42,7 @@ len(brown.words(categories = 'adventure'))
 
 # In[11]:
 
-
+#inaugural corpus of inaugural speeches made ny every POTUS
 from nltk.corpus import inaugural
 
 
